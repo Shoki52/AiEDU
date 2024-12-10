@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Exercise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Practical Exercise: Create Your HTML Page!</h1>
+        </header>
+
+        <main>
+            <p>
+                Write your first HTML code below.
+            </p>
+            <form method="POST">
+                <textarea 
+                    name="answer" 
+                    rows="12" 
+                    cols="70" 
+                    placeholder="Write your code and thoughts here...">
+                </textarea>
+                <br>
+                <button class="btn-submit" type="submit">Submit Your Answer</button>
+            </form>
+
+            {% if user_answer %}
+            <h2>Your Answer:</h2>
+            <pre>{{ user_answer }}</pre>
+            {% endif %}
+        </main>
+
+        <footer>
+            <a href="{{ url_for('hello_page') }}" class="btn-back">Back to Home</a>
+        </footer>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is a Computer?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>What is a Computer?</h1>
+        </header>
+
+        <!-- Section: About Computers -->
+        <section>
+            <div class="content">
+                <img src="../static/media/1.png" alt="Cartoon computer" class="img-computer">
+                <p>A computer is an electronic device that can perform various tasks such as calculations, storing information, and running programs!</p>
+            </div>
+        </section>
+
+        <!-- New Section: Information Technology (IT) -->
+        <section class="it-section">
+            <h2>What is Information Technology (IT)?</h2>
+            <p>Information Technology (IT) is a field dedicated to the use of technology to store, process, transmit, and manage information. It is the backbone of modern society, powering everything from communication systems to business operations, education, healthcare, and entertainment.</p>
+            
+            <h3>Key Components of IT</h3>
+            <ul>
+                <li><strong>Hardware:</strong> Physical devices such as computers, servers, storage devices, networking equipment, and peripherals.<br>
+                    <em>Examples:</em> Laptops, data servers, routers, and printers.</li>
+                <li><strong>Software:</strong> Programs and operating systems that allow hardware to perform specific tasks.<br>
+                    <em>Examples:</em> Operating systems (Windows, Linux), application software (Microsoft Office, Adobe Photoshop).</li>
+                <li><strong>Networking:</strong> The infrastructure that enables devices to connect and communicate with each other.<br>
+                    <em>Examples:</em> LAN (Local Area Networks), WAN (Wide Area Networks), and the Internet.</li>
+                <li><strong>Data:</strong> The lifeblood of IT, consisting of raw facts, processed information, and digital content.<br>
+                    <em>Examples:</em> Customer records, multimedia files, transaction logs.</li>
+                <li><strong>Cybersecurity:</strong> Measures and protocols to protect information and systems from unauthorized access.<br>
+                    <em>Examples:</em> Firewalls, encryption, and antivirus software.</li>
+                <li><strong>IT Services:</strong> Functions that support users and maintain IT infrastructure.<br>
+                    <em>Examples:</em> Technical support, cloud services, IT consulting.</li>
+            </ul>
+
+            <h3>Why is IT Important?</h3>
+            <ul>
+                <li><strong>Connectivity:</strong> Enables global communication and collaboration.</li>
+                <li><strong>Efficiency:</strong> Automates and streamlines processes, saving time and resources.</li>
+                <li><strong>Innovation:</strong> Drives the development of new technologies and solutions.</li>
+                <li><strong>Decision-Making:</strong> Provides tools for analyzing data to make informed decisions.</li>
+                <li><strong>Economic Growth:</strong> Contributes significantly to the global economy.</li>
+            </ul>
+
+            <h3>Examples of IT Applications</h3>
+            <ul>
+                <li><strong>Healthcare:</strong> Electronic health records, medical imaging, and telemedicine.</li>
+                <li><strong>Education:</strong> Online learning platforms and virtual classrooms.</li>
+                <li><strong>Business:</strong> E-commerce platforms, customer relationship management (CRM).</li>
+                <li><strong>Entertainment:</strong> Streaming services, gaming, and social media platforms.</li>
+            </ul>
+
+            <h3>The Future of IT</h3>
+            <p>IT is continuously evolving, with emerging trends like artificial intelligence (AI), blockchain, the Internet of Things (IoT), and quantum computing shaping the future. As technology becomes increasingly integral to daily life, the demand for skilled IT professionals grows, making this field one of the most promising and impactful industries today.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <a href="{{ url_for('hello_page') }}" class="btn-back">Go to Hello Page</a>
+        </footer>
+    </div>
+</body>
+</html>
+

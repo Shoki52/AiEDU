@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Test Results</h1>
+        </header>
+
+        <main>
+            <p>Question 1: {{ 'Correct' if results['q1'] else 'Incorrect' }}</p>
+            <p>Question 2: {{ 'Correct' if results['q2'] else 'Incorrect' }}</p>
+            <p>Question 3: {{ 'Correct' if results['q3'] else 'Incorrect' }}</p>
+            <p>Question 4: {{ 'Correct' if results['q4'] else 'Incorrect' }}</p>
+            <p>Question 5: {{ 'Correct' if results['q5'] else 'Incorrect' }}</p>
+        </main>
+
+        <footer>
+            <a href="{{ url_for('hello_page') }}" class="btn-back">Back to Home</a>
+        </footer>
+    </div>
+</body>
+</html>
+

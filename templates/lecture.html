@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture: Introduction to Computers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lecture: Introduction to Computers</h1>
+        </header>
+
+        <main>
+            <h2>Video Tutorial</h2>
+            <video width="100%" controls>
+                <source src="../static/media/lesson1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h2>Test Your Knowledge</h2>
+            <form method="POST">
+                <div class="question">
+                    <p>1. What is IT?</p>
+                    <input type="radio" name="q1" value="a"> I don't even care about what is it<br>
+                    <input type="radio" name="q1" value="b"> Information Technology<br>
+                    <input type="radio" name="q1" value="c"> Cybersecurity tools<br>
+                </div>
+                <div class="question">
+                    <p>2. Which of them is an output device?</p>
+                    <input type="radio" name="q2" value="a"> A mouse<br>
+                    <input type="radio" name="q2" value="b"> A monitor<br>
+                    <input type="radio" name="q2" value="c"> A keyboard<br>
+                </div>
+                <div class="question">
+                    <p>3. Which of them is an input device?</p>
+                    <input type="radio" name="q3" value="a"> Headphones<br>
+                    <input type="radio" name="q3" value="b"> iPhone<br>
+                    <input type="radio" name="q3" value="c"> Microphone<br>
+                </div>
+                <div class="question">
+                    <p>4. What is a computer?</p>
+                    <input type="radio" name="q4" value="a"> A machine for doing calculations<br>
+                    <input type="radio" name="q4" value="b"> A type of animal<br>
+                    <input type="radio" name="q4" value="c"> A book<br>
+                </div>
+                <div class="question">
+                    <p>5. What is HTML?</p>
+                    <input type="radio" name="q5" value="a"> A programming language<br>
+                    <input type="radio" name="q5" value="b"> A text formatting tool<br>
+                    <input type="radio" name="q5" value="c"> A type of music<br>
+                </div>
+                <button class="btn-submit" type="submit">Submit Answers</button>
+            </form>
+        </main>
+
+        <footer>
+            <a href="{{ url_for('hello_page') }}" class="btn-back">Back to Home</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to IT Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to IT Learning Platform</h1>
+            <p>Explore the world of IT with interactive lessons, quizzes, and practical exercises. Our platform is designed to make learning fun and easy for everyone!</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <p>This platform will help you learn the basics of IT through engaging tutorials and hands-on practice. Choose a section below to start learning!</p>
+            </section>
+
+            <section class="sections">
+                <div class="section">
+                    <h2>Lecture</h2>
+                    <p>Watch a tutorial video and test your knowledge with multiple-choice questions!</p>
+                    <a href="{{ url_for('lecture_page') }}" class="btn-main">Start Lecture</a>
+                </div>
+
+                <div class="section">
+                    <h2>Reading</h2>
+                    <p>Read about the most important IT concepts and expand your knowledge.</p>
+                    <a href="{{ url_for('reading_page') }}" class="btn-main">Start Reading</a>
+                </div>
+
+                <div class="section">
+                    <h2>Practical Exercises</h2>
+                    <p>Try solving programming tasks and submit your answers for feedback.</p>
+                    <a href="{{ url_for('practical_page') }}" class="btn-main">Start Practicing</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Learn IT with Fun</p>
+        </footer>
+    </div>
+</body>
+</html>
